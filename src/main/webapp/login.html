@@ -1,0 +1,60 @@
+
+    <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" src="jquery.datetimepicker.min.css"></link>
+	<script src="jquery.js"></script>
+	<script src="jquery.datetimepicker.full.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Exo|Exo+2|Pacifico|Poppins" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body>
+<div class="container-fluid">
+<nav class="navbar navbar-dark fixed-top " id="navar" style="background-color: #000A1C">
+  <a class="navbar-brand" href="index.html" id="index" >
+    <img src="imagenes/alexa1.gif" width="60" height="60" class="d-inline-block align-top" alt="" >
+    ALEXA
+  </a>
+</nav>
+<div class="form">
+<br>
+<br>
+	<br>
+	<h1>Sesión</h1>
+	<br>
+	<form:form method="POST" action="login" placelholder="HOla" >
+		<div class="form-group">
+		
+			<form:input type="email"  path="login" class="form-control"/>
+			<br>
+		</div>
+		<div class="form-group">
+		
+			<form:password path="password" class="form-control"/>
+		</div>
+		
+			<input type="submit" name="submit" value="Aceptar" class="btn-login" href="perfil.html">
+			<a href="perfil.html">
+				<br>
+			<i class="fab fa-google-plus-square fa-3x" aria-hidden="true"></i> </a>
+		
+		
+			
+	</form:form>
+	</div>
+</div>
+</body>
+</html>
